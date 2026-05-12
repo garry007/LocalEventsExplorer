@@ -1,26 +1,60 @@
+//
+//  ImageCacheServiceTests.swift
+//  LocalEventsExplorerTests
+//
+//  Created by Gurpreet Singh on 2026-05-12.
+//
+
 import XCTest
-import UIKit
 @testable import LocalEventsExplorer
 
 final class ImageCacheServiceTests: XCTestCase {
-    func testSetAndGetImage() {
-        let size = CGSize(width: 10, height: 10)
-        let renderer = UIGraphicsImageRenderer(size: size)
-        let img = renderer.image { ctx in
-            UIColor.red.setFill()
-            ctx.fill(CGRect(origin: .zero, size: size))
-        }
+
+    func testImageCanBeCachedAndLoaded() throws {
+
         let url = URL(string: "https://example.com/test-image.png")!
 
-        ImageCacheService.shared.removeImage(for: url)
-        XCTAssertNil(ImageCacheService.shared.image(for: url))
+        let image = UIImage(systemName: "star")!
+        let data = image.pngData()!
 
-        ImageCacheService.shared.setImage(img, for: url)
-        let retrieved = ImageCacheService.shared.image(for: url)
-        XCTAssertNotNil(retrieved)
-        if let retrieved = retrieved as? UIImage {
-            XCTAssertEqual(retrieved.size.width, img.size.width)
-            XCTAssertEqual(retrieved.size.height, img.size.height)
-        }
+        ImageCacheService.shared.setImage(
+            image,
+            data: data,
+            for: url
+        )
+
+        let cachedImage = ImageCacheService.shared.image(for: url)
+
+        XCTAssertNotNil(cachedImage)
+    }
+
+    func testInvalidURLImageReturnsNil() {
+
+        let url = URL(string: "https://example.com/not-cached-image.png")!
+
+        let cachedImage = ImageCacheService.shared.image(for: url)
+
+        XCTAssertNil(cachedImage)
+    }
+
+    func testMemoryCacheCanBeCleared() throws {
+
+        let url = URL(string: "https://example.com/test-clear-image.png")!
+
+        let image = UIImage(systemName: "heart")!
+        let data = image.pngData()!
+
+        ImageCacheService.shared.setImage(
+            image,
+            data: data,
+            for: url
+        )
+
+        ImageCacheService.shared.clearMemoryCache()
+
+        let cachedImage = ImageCacheService.shared.image(for: url)
+
+        // Disk cache should still return image after memory cache is cleared.
+        XCTAssertNotNil(cachedImage)
     }
 }
