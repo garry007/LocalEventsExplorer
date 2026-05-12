@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "title": "Toronto Food Festival",
+    "locationName": "Nathan Phillips Square",
+    "latitude": 43.6535,
+    "longitude": -79.3839,
+    "time": "2026-06-10T18:00:00Z",
+    "imageURL": "https://picsum.photos/id/292/600/400",
+    "details": "Local food vendors, live music, and family activities in downtown Toronto."
+  },
+  {
+    "id": "2",
+    "title": "Punjabi Music Night",
+    "locationName": "Brampton Garden Square",
+    "latitude": 43.6853,
+    "longitude": -79.7599,
+    "time": "2026-06-15T20:00:00Z",
+    "imageURL": "https://picsum.photos/id/237/600/400",
+    "details": "Outdoor Punjabi music event with local artists and food trucks."
+  },
+  {
+    "id": "3",
+    "title": "Family Movie Evening",
+    "locationName": "Mississauga Celebration Square",
+    "latitude": 43.5890,
+    "longitude": -79.6441,
+    "time": "2026-06-20T19:30:00Z",
+    "imageURL": "https://picsum.photos/id/1025/600/400",
+    "details": "Outdoor movie night with snacks, games, and activities for families."
+  },
+  {
+    "id": "4",
+    "title": "Summer Night Market",
+    "locationName": "Markham Fairgrounds",
+    "latitude": 43.8767,
+    "longitude": -79.2620,
+    "time": "2026-06-18T17:00:00Z",
+    "imageURL": "https://picsum.photos/id/431/600/400",
+    "details": "Night market featuring local vendors, desserts, and live entertainment."
+  },
+  {
+    "id": "5",
+    "title": "Waterfront Yoga Session",
+    "locationName": "Harbourfront Centre",
+    "latitude": 43.6387,
+    "longitude": -79.3817,
+    "time": "2026-06-12T08:00:00Z",
+    "imageURL": "https://picsum.photos/id/1005/600/400",
+    "details": "Morning yoga session by the lake for beginners and experienced participants."
+  },
+  {
+    "id": "6",
+    "title": "Kids Science Fair",
+    "locationName": "Ontario Science Centre",
+    "latitude": 43.7161,
+    "longitude": -79.3388,
+    "time": "2026-06-22T11:00:00Z",
+    "imageURL": "https://picsum.photos/id/180/600/400",
+    "details": "Interactive science exhibits and experiments for children and families."
+  },
+  {
+    "id": "7",
+    "title": "Art & Craft Expo",
+    "locationName": "Distillery District",
+    "latitude": 43.6503,
+    "longitude": -79.3596,
+    "time": "2026-06-25T14:00:00Z",
+    "imageURL": "https://picsum.photos/id/1060/600/400",
+    "details": "Handmade crafts, paintings, and local artist showcases."
+  },
+  {
+    "id": "8",
+    "title": "Community Soccer Tournament",
+    "locationName": "Centennial Park",
+    "latitude": 43.6529,
+    "longitude": -79.5890,
+    "time": "2026-06-28T10:00:00Z",
+    "imageURL": "https://picsum.photos/id/1040/600/400",
+    "details": "Friendly soccer matches with local community teams and food vendors."
+  },
+  {
+    "id": "9",
+    "title": "Street Food Carnival",
+    "locationName": "Scarborough Town Centre",
+    "latitude": 43.7756,
+    "longitude": -79.2578,
+    "time": "2026-06-19T16:00:00Z",
+    "imageURL": "https://picsum.photos/id/1080/600/400",
+    "details": "Taste food from around the world with music and performances."
+  },
+  {
+    "id": "10",
+    "title": "Photography Walk",
+    "locationName": "High Park",
+    "latitude": 43.6465,
+    "longitude": -79.4637,
+    "time": "2026-06-16T09:00:00Z",
+    "imageURL": "https://picsum.photos/id/1043/600/400",
+    "details": "Guided photography walk through scenic trails and gardens."
+  },
+  {
+    "id": "11",
+    "title": "Startup Networking Meetup",
+    "locationName": "Downtown Toronto",
+    "latitude": 43.6487,
+    "longitude": -79.3854,
+    "time": "2026-06-30T18:30:00Z",
+    "imageURL": "https://picsum.photos/id/1/600/400",
+    "details": "Networking event for developers, founders, and tech enthusiasts."
+  },
+  {
+    "id": "12",
+    "title": "Cultural Dance Festival",
+    "locationName": "Burlington Waterfront",
+    "latitude": 43.3255,
+    "longitude": -79.7990,
+    "time": "2026-07-02T17:30:00Z",
+    "imageURL": "https://picsum.photos/id/433/600/400",
+    "details": "Multicultural dance performances and traditional food stalls."
+  }
+]
